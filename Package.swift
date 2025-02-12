@@ -9,8 +9,8 @@ let package = Package(
         .library(name: "Pillow", targets: ["Pillow"])
     ],
     dependencies: [
-        .package(url: "https://github.com/KivySwiftLink/ImageCore", from: "311.0.14"),
-        .package(url: "https://github.com/KivySwiftLink/FreeType", from: "311.0.14"),
+        .package(url: "https://github.com/KivySwiftLink/ImageCore", from: "311.0.15"),
+        .package(url: "https://github.com/KivySwiftLink/FreeType", from: "311.0.15"),
         .package(url: "https://github.com/KivySwiftLink/PythonSwiftLink", .upToNextMajor(from: "311.1.0")),
         .package(url: "https://github.com/KivySwiftLink/PythonCore", .upToNextMajor(from: "311.0.0"))
     ],
@@ -32,8 +32,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "libpillow",
-            url: "https://github.com/kivyswiftlink/Pillow/releases/download/311.0.14/libpillow.zip",
-            checksum: "75929f180e65a718e838ee2359d1730a889e6e1d2ac9535d61b331f0b30401fb"
+            url: "https://github.com/kivyswiftlink/Pillow/releases/download/311.0.15/libpillow.zip",
+            checksum: "9fd8d4b6c4bf96a7d806c1383cc027badadbd40da8a07e24fcaaa80a3b78d2c1"
         )
     ]
 )
