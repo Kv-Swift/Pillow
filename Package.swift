@@ -9,8 +9,8 @@ let package = Package(
         .library(name: "Pillow", targets: ["Pillow"])
     ],
     dependencies: [
-        .package(url: "https://github.com/kv-swift/ImageCore", from: "311.1.19"),
-        .package(url: "https://github.com/kv-swift/FreeType", from: "311.1.19"),
+        .package(url: "https://github.com/kv-swift/ImageCore", from: "311.1.20"),
+        .package(url: "https://github.com/kv-swift/FreeType", from: "311.1.20"),
         .package(url: "https://github.com/kv-swift/PySwiftKit", .upToNextMajor(from: "311.0.0")),
         .package(url: "https://github.com/kv-swift/PythonCore", .upToNextMajor(from: "311.0.0"))
     ],
@@ -32,8 +32,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "libpillow",
-            url: "https://github.com/kv-swift/Pillow/releases/download/311.1.19/libpillow.zip",
-            checksum: "3f596b04900eed42d5431238b8c954677b5e68792c67c93d95ed0c3413790a37"
+            url: "https://github.com/kv-swift/Pillow/releases/download/311.1.20/libpillow.zip",
+            checksum: "21d92a1a569d6551db6c2275719444419980bdbdadbd06bcd5fa263118154ec0"
         )
     ]
 )
