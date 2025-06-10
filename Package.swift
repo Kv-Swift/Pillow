@@ -9,8 +9,8 @@ let package = Package(
         .library(name: "Pillow", targets: ["Pillow"])
     ],
     dependencies: [
-        .package(url: "https://github.com/kv-swift/ImageCore", from: "311.1.18"),
-        .package(url: "https://github.com/kv-swift/FreeType", from: "311.1.18"),
+        .package(url: "https://github.com/kv-swift/ImageCore", from: "311.1.19"),
+        .package(url: "https://github.com/kv-swift/FreeType", from: "311.1.19"),
         .package(url: "https://github.com/kv-swift/PySwiftKit", .upToNextMajor(from: "311.0.0")),
         .package(url: "https://github.com/kv-swift/PythonCore", .upToNextMajor(from: "311.0.0"))
     ],
@@ -18,9 +18,9 @@ let package = Package(
         .target(
             name: "Pillow",
             dependencies: [
-        		.target(name: "libjpeg"),
-        		.target(name: "freetype"),
-        		"libpillow"
+        		.product(name: "libjpeg", package: "ImageCore"),
+        		.product(name: "freetype", package: "FreeType"),
+        		.target(name: "libpillow")
         	],
             resources: [
         	],
@@ -32,8 +32,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "libpillow",
-            url: "https://github.com/kv-swift/Pillow/releases/download/311.1.18/libpillow.zip",
-            checksum: "f93ce4f8bba0f2f55f3303ce7d0fb3fd697edb25f6504ff5b5a2dbd9a0e11ea6"
+            url: "https://github.com/kv-swift/Pillow/releases/download/311.1.19/libpillow.zip",
+            checksum: "3f596b04900eed42d5431238b8c954677b5e68792c67c93d95ed0c3413790a37"
         )
     ]
 )
